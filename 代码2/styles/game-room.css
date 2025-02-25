@@ -1,0 +1,165 @@
+.game-room-page {
+    background: #1a4f2e;
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+/* 房间信息样式 */
+.room-info {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.game-status {
+    display: flex;
+    gap: 20px;
+}
+
+/* 游戏桌面样式 */
+.game-table {
+    background: #2d734d;
+    border-radius: 100px;
+    padding: 40px;
+    position: relative;
+    height: 70vh;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 其他玩家位置样式 */
+.other-players {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+.player-seat {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 150px;
+}
+
+.player-avatar {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* 玩家手牌样式 */
+.player-cards {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.card {
+    width: 60px;
+    height: 90px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* 中央区域样式 */
+.table-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.pot {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+}
+
+/* 当前玩家区域样式 */
+.current-player {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 300px;
+}
+
+.player-controls {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.btn.danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* 聊天区域样式 */
+.chat-box {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chat-messages {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .game-table {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .other-players {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .player-seat {
+        width: 120px;
+    }
+
+    .chat-box {
+        width: 100%;
+        right: 0;
+        bottom: 0;
+    }
+} 
