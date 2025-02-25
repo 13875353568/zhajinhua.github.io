@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏房间 - 欢乐炸金花</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/game-room.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="game-room-page">
+    <!-- 房间信息 -->
+    <div class="room-info">
+        <h2>房间 #<span id="roomId">1</span></h2>
+        <div class="game-status">
+            <span>底注: <span id="minBet">100</span></span>
+            <span>当前玩家: <span id="playerCount">1</span>/5</span>
+        </div>
+    </div>
+
+    <!-- 游戏区域 -->
+    <div class="game-table">
+        <!-- 其他玩家位置 -->
+        <div class="other-players">
+            <div class="player-seat" data-seat="1">
+                <div class="player-avatar"></div>
+                <div class="player-info">
+                    <span class="player-name">等待加入...</span>
+                    <span class="player-chips">1000</span>
+                </div>
+                <div class="player-cards"></div>
+            </div>
+            <!-- 重复4个玩家位置 -->
+        </div>
+
+        <!-- 公共区域 -->
+        <div class="table-center">
+            <div class="pot">
+                <span>当前池:</span>
+                <span id="potAmount">0</span>
+            </div>
+        </div>
+
+        <!-- 当前玩家区域 -->
+        <div class="current-player">
+            <div class="player-cards">
+                <!-- 玩家手牌将在这里显示 -->
+            </div>
+            <div class="player-controls">
+                <button class="btn primary" id="btnReady">准备</button>
+                <button class="btn primary" id="btnBet" disabled>下注</button>
+                <button class="btn secondary" id="btnFold" disabled>弃牌</button>
+                <button class="btn danger" id="btnLeave">离开</button>
+            </div>
+            <div class="player-info">
+                <span class="player-name">我</span>
+                <span class="player-chips">1000</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 聊天区域 -->
+    <div class="chat-box">
+        <div class="chat-messages" id="chatMessages">
+            <!-- 聊天消息将在这里显示 -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="输入消息...">
+            <button class="btn primary" id="btnSend">发送</button>
+        </div>
+    </div>
+
+    <script src="js/game-room.js"></script>
+</body>
+</html> 
