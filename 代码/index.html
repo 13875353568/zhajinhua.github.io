@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>畜生帮 - 野性不改，灵魂不灭</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="畜生帮">
+        </div>
+        <div class="nav-links">
+            <a href="#home">首页</a>
+            <a href="#about">关于</a>
+            <a href="#photos">照片</a>
+            <a href="#contact">联系</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Banner区域 -->
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h1>畜生帮</h1>
+            <p class="subtitle">野性不改，灵魂不灭</p>
+        </div>
+        <div class="carousel">
+            <!-- 轮播图内容将通过JS动态添加 -->
+        </div>
+    </section>
+
+    <!-- 关于板块 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于畜生帮</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>畜生帮，一个充满野性与自由的组织。我们由三位核心成员组成：</p>
+                    <p>畜生之王：周子崴<br>
+                       老二：吴岚<br>
+                       老三：熊瀚翔</p>
+                    <p>我们追求自由，崇尚野性，但绝不失去人性的光辉。</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-img.jpg" alt="畜生帮">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片墙 -->
+    <section id="photos" class="photos">
+        <div class="container">
+            <h2>照片墙</h2>
+            <div class="photo-grid">
+                <div class="photo-item" data-title="畜生之王 周子崴">
+                    <img src="images/photo1.jpg" alt="周子崴">
+                </div>
+                <div class="photo-item" data-title="老二 吴岚">
+                    <img src="images/photo2.jpg" alt="吴岚">
+                </div>
+                <div class="photo-item" data-title="老三 熊瀚翔">
+                    <img src="images/photo3.jpg" alt="熊瀚翔">
+                </div>
+                <!-- 更多照片... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系板块 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="mailto:contact@chushengbang.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="你的名字" required>
+                    <input type="email" placeholder="邮箱地址" required>
+                    <textarea placeholder="留言内容" required></textarea>
+                    <button type="submit">发送消息</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2023 畜生帮。保留所有权利。</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- 在body结束标签前添加 -->
+    <script src="scripts/carousel.js"></script>
+</body>
+</html> 
